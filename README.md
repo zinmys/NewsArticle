@@ -16,7 +16,7 @@ Project structure:
 ```
 
 [_docker-compose.yaml_](docker-compose.yaml)
-```
+
 The compose file defines an application with three services `front-end`, `back-end` and `mysql`.
 When deploying the application, docker compose maps port 3000 of the frontend service container and port 8000 of the backend service container.
 Make sure port 3000 and 8000 on the host is not already being in use.
@@ -56,16 +56,20 @@ ac7cb7f9c42b   back-end                "docker-php-entrypoi…"   2 days ago    
 ```
 
 ## Execute PHP command line
+```
 $ docker exec back-end php artisan migrate
 $ docker exec back-end php artisan passport:client --client > then Enter to skip question (using default settings)
 $ docker exec back-end php artisan passport:client --personal > then Enter to skip questions (using default settings)
+```
 
 ## Copy secret and set as .env
+```
 PASSPORT_CREDENTIALS_CLIENT_ID={client credentials id}
 PASSPORT_CREDENTIALS_CLIENT_SECRET={client credentials secret}
 
 PASSPORT_PERSONAL_ACCESS_CLIENT_ID={personal credentials id}
 PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET={personal credentials secret}
+```
 
 After the application starts, navigate to `http://localhost:3000` in your web browser.
 
