@@ -1,0 +1,36 @@
+.headernav{
+    border-bottom: 1px solid #e2e1e1!important;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.sidenav {
+    border-right: 1px solid #e2e1e1!important;
+    padding: 20px;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .sidenav {
+        display: none;
+    }
+}
+
+.filter {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+.icon-padding {
+    padding-bottom: 15px;
+}
+
+.rightnav {
+    padding: 20px;
+    height: 100%;
+    border-left: 1px solid #e2e1e1!important;
+}
